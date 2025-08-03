@@ -1,4 +1,3 @@
-# Kingregan-Academy-Trust
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -88,6 +87,30 @@
   <textarea name="message" rows="4" placeholder="Any Message or Email to send material"></textarea>
   <input type="submit" value="Verify Payment">
 </form>
+
+  </section>  <section id="necta-results">
+    <h2>📢 ACSEE Results 2025 – NECTA</h2>
+    <p><strong>Official Notification:</strong> National Examinations Council of Tanzania (NECTA) has officially released Form Six Results (ACSEE) for 2025.</p>
+    <p>Search results below or click the link to view full list.</p><form onsubmit="searchResults(); return false;">
+  <input type="text" id="searchInput" placeholder="Enter your school name or exam number" required>
+  <input type="submit" value="Search">
+</form>
+
+<p style="margin-top: 10px;">
+  Or click here to view all results: <br>
+  <a href="https://matokeo.necta.go.tz/results/2025/acsee/index.htm" target="_blank" class="btn" style="background-color: #228B22; color: white;">🔍 View NECTA Results 2025</a>
+</p>
+
+<script>
+  function searchResults() {
+    const query = document.getElementById("searchInput").value.trim();
+    if (query !== "") {
+      const url = `https://matokeo.necta.go.tz/results/2025/acsee/index.htm`; // No internal search provided
+      alert(`Search functionality is not live yet. Please use Ctrl+F on the NECTA page to search for: ${query}`);
+      window.open(url, '_blank');
+    }
+  }
+</script>
 
   </section>  <section id="videos">
     <h2>🎥 Video Lessons</h2>
